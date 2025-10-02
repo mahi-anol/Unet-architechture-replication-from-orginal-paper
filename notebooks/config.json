@@ -1,0 +1,23 @@
+{
+    "encoder":{
+        "no_of_blocks":4,
+        "block_wise_filter_config":[
+            [3,64,64],
+            [64,128,128],
+            [128,256,256],
+            [256,512,512]
+        ]
+    },
+    "bottleneck_filter_config":[
+        512,1024,1024
+    ],
+    "decoder":{
+        "no_of_blocks":3,
+        "block_wise_filter_config":[
+            [1024,512,512],
+            [512,256,256],
+            [256,128,128]
+        ]
+    }
+
+}
